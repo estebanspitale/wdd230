@@ -75,10 +75,11 @@ li {
     text-align: center;
     list-style: none;
 }
-
-
-
-
+ul{
+    font-size: 30px;
+    padding: 0%;
+    margin:0%;
+}
 footer {
     list-style-type: none;
     right: 300px;
