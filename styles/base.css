@@ -16,7 +16,7 @@ nav {
     margin: 1px;
     padding: 5px;
     background-color:lightblue;
-    border: 1px solid #555
+    border: 1px solid #555;
     }
 a{
     text-align: center;
@@ -27,6 +27,10 @@ a{
     text-decoration: none;
     font-size: 30px;
     font-style: unset;
+}
+.LA {
+    font-size: 20px;
+    text-align: left;
 }
 .profile-img {
     width: 120px;
