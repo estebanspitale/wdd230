@@ -31,6 +31,7 @@ a{
 .LA {
     font-size: 20px;
     text-align: left;
+    margin-left: -1.5%;
 }
 .profile-img {
     width: 120px;
@@ -68,6 +69,7 @@ li {
     padding: 5px 0;
     font-size: 20px;
     list-style: none;
+    margin-left: 4%;
   }
 .card {
     display: grid;
