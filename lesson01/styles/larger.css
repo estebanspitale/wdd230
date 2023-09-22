@@ -1,1 +1,13 @@
-@media screen and (min-width: 500px){}
+@media screen and (min-width: 900px){
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .card {
+        grid-column: span 1;
+    }
+}
+
+
+
+
