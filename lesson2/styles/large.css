@@ -1,0 +1,17 @@
+@media only screen and (min-width: 60em) {
+    header h1 {
+      word-spacing: 10px;
+    }
+    main {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .toyota {
+      grid-column: 1/2;
+    }
+    .zikloland {
+      grid-column: 2/3;
+    }
+    .lds {
+      grid-column: 3/4;
+    }
+  }
