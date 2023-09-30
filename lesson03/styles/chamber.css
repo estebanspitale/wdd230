@@ -1,4 +1,4 @@
-body, h1, h2, p, ul {
+* body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
 }
@@ -34,6 +34,7 @@ section {
 }
 
 .image-desktop {
+    position: absolute;
     max-width: 800px; 
     height: auto; 
     display: block; 
@@ -41,6 +42,7 @@ section {
 }
 
 .image-mobile {
+    position: absolute;
     max-width: 800px; 
     height: auto; 
     display: block; 
