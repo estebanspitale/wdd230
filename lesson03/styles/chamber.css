@@ -34,7 +34,6 @@ section {
 }
 
 .image-desktop {
-    position: absolute;
     max-width: 800px; 
     height: auto; 
     display: block; 
@@ -42,8 +41,7 @@ section {
 }
 
 .image-mobile {
-    position: absolute;
-    max-width: 800px; 
+    max-width: 300px; 
     height: auto; 
     display: block; 
     margin: 0 auto;
