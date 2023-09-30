@@ -34,14 +34,14 @@ section {
 }
 
 .image-desktop {
-    max-width: 500px; 
+    max-width: 100%; 
     height: auto; 
     display: block; 
     margin: 0 auto; 
 }
 
 .image-mobile {
-    max-width: 300px; 
+    max-width: 80%; 
     height: auto; 
     display: block; 
     margin: 0 auto;
