@@ -1,0 +1,22 @@
+@media only screen and (min-width: 60em) {
+  li a {
+    padding: 1.25em;
+  }
+  .ad3 img {
+    width: 259px;
+  }
+  footer {
+    display: flex;
+  }
+  footer p {
+    margin: 0;
+    margin-left: 4%;
+  }
+  .date {
+    margin-left: auto;
+    margin-right: 4%;
+  }
+  iframe {
+    width: 400px;
+  }
+}

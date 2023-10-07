@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+}
+header,
+footer {
+  background-color: #1359a4;
+  font-family: "Verdana", serif;
+  color: whitesmoke;
+
+}
+header {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+header li:first-child {
+  display: block;
+}
+header nav li {
+  display: none;
+}
+header li a {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.responsive li {
+  display: block;
+}
+header nav a:hover {
+  background-color: #bbb;
+  color: #052033;
+}
+header ul {
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+}
+header li {
+  list-style: none;
+}
+.active {
+  background-color: #16427c;
+  color: #b5fffc;
+}
+header a {
+  display: block;
+}
+header a,
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+main {
+  font-family: "Verdana", sans-serif;
+  background-color: #c2eeff;
+}
+
+.hero img {
+  width: 100%;
+}
+.hero {
+  position: relative;
+}
+.advertisement {
+  margin: 2%;
+  display: grid;
+  grid-template-columns:  1fr;
+  text-align: center;
+  grid-gap: 1%;
+}
+.ad1 {
+  padding: 2%;
+  background-color: #00bfff;
+}
+.ad1 img {
+  width: 70%;
+}
+.ad2 {
+
+  padding: 2%;
+  background-color: #00bfff;
+}
+.ad2 img {
+  width: 100%;
+}
+.ad3 {
+  display: block;
+  padding: 2%;
+  background-color: #00bfff;
+  margin-bottom: 3%;
+}
+.ad3 img {
+  margin-left: auto;
+  width: 100%;
+}
+.ad1,.ad2,.ad3 {
+  border-radius: 30px;
+}
+.events {
+  display: block;
+  margin: 2%;
+}
+.currentEvents,
+.weather {
+  margin: 0 auto;
+  padding: 2%;
+  background-color:#43d0ff;
+  border-radius: 30px;
+}
+.weather {
+  margin-top: 2%;
+  padding: 2%;
+}
+
+.currentEvents h3,
+.weather h3 {
+  text-align: center;
+  color: #00297a;
+}
+.currentEvents ul li {
+  margin-bottom: 2%;
+}
+.weather .information {
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: left;
+  font-size: 1.2rem;
+}
+.CTA {
+  text-align: center;
+  margin: 2%;
+  color: #000000;
+}
+.CTA-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.CTA-grid img {
+  width: 100%;
+}
+.CTA h1 {
+  margin-bottom: 1%;
+}
+.CTA p {
+  padding-right: 4%;
+  padding-left: 4%;
+  padding-bottom: 1%;
+  margin: 0;
+  line-height: 2.5rem;
+  font-size: 1.3rem;
+}
+.CTA button {
+  font-size: 1.5rem;
+  margin: 1.5%;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #2f00ff;
+  background-color: white;
+}
+footer {
+  text-align: center;
+  padding: 2%;
+  font-size: 20px;
+}
+footer p {
+  text-align: center;
+  margin: 0;
+}

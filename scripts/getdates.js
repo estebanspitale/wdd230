@@ -6,13 +6,20 @@ document.getElementById("lastmodified").innerHTML = a.toLocaleString();
 
 /*Activity Lesson03 - Hamburger buttton*/
 
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+const hamButton = document.querySelector('.ham');
+const mainMenu = document.querySelector('.navigation');
 
-hamButton.addEventListener('click', () => {
-navigation.classList.toggle('open');
-hamButton.classList.toggle('open');
-});
+hamButton.addEventListener('click', () =>{
+    mainMenu.classList.toggle('responsive')
+}, false);
+
+window.onresize = () => {
+    if(window.innerWidth > 760){
+        
+        mainMenu.classList.remove('responsive');
+        
+    }
+};
 
 
 
