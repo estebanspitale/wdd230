@@ -6,7 +6,7 @@ footer {
   background-color: #1359a4;
   font-family: "Verdana", serif;
   color: whitesmoke;
-
+  background-image: linear-gradient(0deg, #04003a 0%, #4638ff 100%);
 }
 header {
   border-bottom: 1px solid black;
@@ -52,6 +52,14 @@ footer a {
   color: white;
   font-size: 20px;
 }
+/* Dark Mode */
+#mode {
+	position: absolute;
+	top: 0.2rem;
+	right: 0.25rem;
+	font-size: 2rem;
+	cursor: pointer;
+}
 main {
   font-family: "Verdana", sans-serif;
   background-color: #c2eeff;
@@ -73,14 +81,15 @@ main {
 .ad1 {
   padding: 2%;
   background-color: #00bfff;
+  background-image: linear-gradient(0deg,#5991ff 0%, #1100ff 100%);
 }
 .ad1 img {
   width: 70%;
 }
 .ad2 {
-
   padding: 2%;
   background-color: #00bfff;
+  background-image: linear-gradient(0deg,#5991ff 0%, #1100ff 100%);
 }
 .ad2 img {
   width: 100%;
@@ -90,6 +99,7 @@ main {
   padding: 2%;
   background-color: #00bfff;
   margin-bottom: 3%;
+  background-image: linear-gradient(0deg, #1100ff 0%, #5991ff 100%);
 }
 .ad3 img {
   margin-left: auto;
@@ -117,7 +127,7 @@ main {
 .currentEvents h3,
 .weather h3 {
   text-align: center;
-  color: #00297a;
+  color: #000000;
 }
 .currentEvents ul li {
   margin-bottom: 2%;
@@ -131,6 +141,12 @@ main {
   text-align: center;
   margin: 2%;
   color: #000000;
+  font-weight:bold;
+  background-color: #43d0ff;
+  border-radius: 2%;
+  padding-top: 2%;
+  background: rgb(6, 0, 112);
+  background: radial-gradient(circle, rgb(7, 0, 142) 0%, rgba(9,90,121,1) 53%, rgba(0,212,255,1) 100%);
 }
 .CTA-grid {
   display: grid;
