@@ -86,7 +86,6 @@ main {
 .herolabel p {
   text-align: center;
 	margin: 0;
-  font-weight: 100%;
 	font-size: 100%;
 	font-family:"Great Vibes", serif;
 }
@@ -142,6 +141,8 @@ main {
 .weather {
   margin-top: 2%;
   padding: 2%;
+  width: 30%;
+  margin-left: 5%;
 }
 
 .currentEvents h3,
@@ -152,10 +153,27 @@ main {
 .currentEvents ul li {
   margin-bottom: 2%;
 }
+.information input {
+  width: 80%;
+}
 .weather .information {
   grid-template-columns: 1fr 1fr 1fr;
-  text-align: left;
-  font-size: 1.2rem;
+  text-align: center;
+  font-size: 90%;
+}
+.information button {
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 90%;
+  background: linear-gradient( rgb(95, 87, 255) 0%, rgba(9,90,121,1) 53%);
+  font-weight:bolder;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.information p{
+  padding: 2%;
+  text-align: center;
 }
 .CTA {
   text-align: center;
