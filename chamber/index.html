@@ -7,7 +7,7 @@
     <title>Welcome to Villa Carlos Paz</title>
     <meta name="author" content="Esteban Adrian Spitale">
     <meta name="description" content="Home Page: Villa Carlos Paz Chamber of Commerce and Tourism">
-    <link rel="icon" href="images/favicon.jpg">
+    <link rel="icon" href="images/favicon.webp">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -19,7 +19,7 @@
 </head>
 <body>
     <header>
-        <img id="logo" src="images/favicon.jpg" alt="Chamber Logo">
+        <img id="logo" src="images/favicon.webp" alt="Chamber Logo">
         <h1>Villa Carlos Paz Chamber of Commerce and Tourism</h1>
         <nav>
             <ul class="navigation">
@@ -37,7 +37,16 @@
 
     <main>
         <div class="hero">
-            <img src="images/vcp_hero_img.webp" alt="Villa Carlos Paz">
+            <!--<img src="images/vcp_hero_img.webp" alt="Villa Carlos Paz">
+            <img src="images/wdd230-org.jpg" alt="Image Week06">-->
+            <picture>
+                <source srcset="images/wdd230-org-small.webp" media="(max-width: 500px)">
+                <source srcset="images/wdd230-org-medium.webp" media="(max-width: 1000px)">
+                <img src="images/wdd230-org-large.webp" alt="table setting" width="1500" height="750">
+            </picture>
+            <div class="herolabel">
+                <p>Large</p>
+            </div>
         </div>
         <div class="advertisement">
             <div class="ad1">
@@ -77,7 +86,7 @@
                 <h3>Weather Section</h3>
                 <div class="information">
                     <p>Temperature</p>
-                    <p>Winds</p>
+                    <p>Windspeed</p>
                     <p>Precipitation</p>
                     <p>Alerts</p>
                 </div>    
@@ -90,7 +99,7 @@
                     an association that promotes commercial and tourist development in the city
                     Get to know the shops, accommodations and tourist attractions 
                     associated with the chamber and obtain important benefits as an associate.</p>
-                <img src="images/board_of_directors.jpg" alt="associates">
+                <img src="images/board_of_directors.webp" alt="associates">
             </div>
             <button type="button" onclick="location.href=''">Register Now</button>
         </div>
@@ -103,5 +112,6 @@
     </footer>
     <script src="scripts/script.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

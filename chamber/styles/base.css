@@ -71,6 +71,25 @@ main {
 .hero {
   position: relative;
 }
+/* Responsive Image */
+.herolabel {
+	position: absolute;
+  width: 10%;
+  top: 15px;
+  left: 5%;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+.herolabel p {
+  text-align: center;
+	margin: 0;
+  font-weight: 100%;
+	font-size: 100%;
+	font-family:"Great Vibes", serif;
+}
 .advertisement {
   margin: 2%;
   display: grid;
