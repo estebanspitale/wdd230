@@ -1,0 +1,27 @@
+@media (max-width: 800px) {
+    .discover {
+        margin: 5%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto)
+    }
+    .sidebar {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .sidebar-right {
+        grid-column: 1; 
+        grid-row: 5;
+        display: grid;
+    }
+    .sidebar-right img {
+        grid-column: 1;
+        height: 150px;
+    }
+    .sidebar-right img:hover {
+        transform: none;
+    }
+    img {
+        width: 100%;
+    }
+}

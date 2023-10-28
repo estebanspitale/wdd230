@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Villa Carlos Paz</title>
+    <meta name="author" content="Esteban Adrian Spitale">
+    <meta name="description" content="Home Page: Villa Carlos Paz Chamber of Commerce and Tourism">
+    <link rel="icon" href="images/favicon.webp">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/discover-small.css">
+    <meta property="og:title" content="Villa Carlos Paz Chamber of Commerce and Tourism">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.voydeviaje.com.ar/resizer/7YbXJ5i53k5btvE9fL1I56n2ii4=/1200x630/smart/filters:quality(75):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/2T4J2TVPBNB5TEZRHCZCXKTGE4.jpg" >
+    <meta property="og:url" content="https://estebanspitale.github.io/wdd230/chamber/index.html" >
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/favicon.webp" alt="Chamber Logo">
+        <h1>Villa Carlos Paz Chamber of Commerce and Tourism</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776;Menu</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+            </ul>
+        </nav>
+        <div id="mode"> 
+            🕶️
+        </div>
+    </header>
+    <main>
+        <div class="discover">
+            <div class="sidebar">
+                <h1>Discover Chamber of Commerce</h1>
+            </div>
+            <div class="sidebar-left">
+                <h2>Demographic statistics</h2>
+                <img src="images/larger-demographic-statistics.webp" alt="table setting" loading="lazy" width="300" height="200">
+                <p>The 2022 National Census of Population, Households 
+                    and Housing gave Villa Carlos Paz the figure of 96,000 inhabitants</p>
+            </div>
+            <div class="sidebar-left2">
+                <h2>Information about Villa Carlos Paz</h2>
+                <li>DATE OF FOUNDATION: July 16, 1913.</li>
+                <li>DATE THAT WAS DECLARED A CITY: July 16, 1964.</li>
+                <li>DATE OF REAFFIRMATION AS A TOURIST CITY: July 16, 1987.</li>
+                <li>PATRON'S FEAST: July 16: Feast of Our Lady of Carmen - Vice-Patron San Roque</li>
+                <li>HEIGHT ABOVE SEA LEVEL: 650 meters.</li>
+                <li>TYPICAL FLOWER: Plumerillo or Goatbeard</li>
+            </div>
+            <div class="calendar">
+                <h2>Calendar</h2>
+                <img src="images/november-2023-calendar.webp" alt="table setting" loading="lazy" width="400" height="300">
+            </div>
+            <div class="visits">
+                <h2>Visits</h2>
+                <p id="visits"> </p>
+            </div>
+            <div class="sidebar-right">
+                <h2>Hill of the Cross</h2>
+                <img class="img" src="images/cerro-cruz.webp" alt="Hill of the Cross" loading="lazy" width="800" height="400">
+                <h2>Quebrada del Condorito</h2>
+                <img class="img" src="images/quebrada-condorito.webp" alt="Quebrada del Condorito" loading="lazy" width="800" height="400">
+                <h2>Lake Grill</h2>
+                <img class="img" src="images/parrilla-lago.webp" alt="Lake Grill" loading="lazy" width="800" height="400">
+                <h2>Centenary Bridge</h2>
+                <img class="img" src="images/puente-centenario.webp" alt="Centenary Bridge" loading="lazy" width="800" height="400">
+                <h2>Cu-CU</h2>
+                <img class="img" src="images/cu-cu.webp" alt="Cu-CU" loading="lazy" width="800" height="400">
+                <h2>The Pulperia Restaurant</h2>
+                <img class="img" src="images/The-pulperia.webp" alt="The Pulperia Restaurant" loading="lazy" width="800" height="400">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Location: Virgilo y Constantinopla, Carlos Paz</p>
+        <p>&copy;<span id="currentyear"></span>| Esteban Spitale | Cordoba |</p>
+        <p> Project WDD230  </p>
+        <div> | Last Updated:<span id="lastmodified"></span></div>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/last-visits.js"></script>
+</body>
+</html>
