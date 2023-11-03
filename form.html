@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esteban Spitale - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Esteban Adrian Spitale - WDD 230: Web Frontend Development - BYU">
+    <meta name="author" content="Esteban A. Spitale">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="lesson02/design.html">
+    <link rel="stylesheet" href="style/small.css" media="(max-width: 640px)">
+    <link rel="stylesheet" href="style/medium.css" media="(max-width: 950px)">
+    <meta property="og:title" content="WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.voydeviaje.com.ar/resizer/7YbXJ5i53k5btvE9fL1I56n2ii4=/1200x630/smart/filters:quality(75):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/2T4J2TVPBNB5TEZRHCZCXKTGE4.jpg">
+    <meta property="og:url" content="https://estebanspitale.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <header>
+        <img class="profile-img" src="images/profile.webp" alt="profile image">
+        <h1>Esteban Spitale</h1>
+    </header>
+    <nav>
+	    <ul class="navigation">
+            <!--<li><a class="ham" href="#">&#9776;Menu</a></li>-->
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=spa">Scripture</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="record.html">
+            <span id="message"></span>
+            <fieldset>
+                <label class="top">Username* <input id="username" name="username" type="text" required></label>
+                <label class="top">Password* <input id="password" name="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required></label>
+                <label class="top">Confirm Password* <input id="confirm" name="confirm" type="password" required></label>
+                <label class="top">BYUI Email* <input id="email" name="email" type="email" placeholder="someone@byui.edu" required pattern="[A-Za-z]+@byui\.edu$"
+                        title="Please enter a valid e-mail address."></label>
+                <label class="top">Page Rating: <span id="currentrating"></span><input id="rating" name="rating" type="range" min="0"
+                        max="10" value="1" step="1" list="rangevalues"></label>
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+                <button id="submit" type="submit">Register Now</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Esteban Spitale | Cordoba |</p>
+        <div>Last Updated: <span id="lastmodified"></span></div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/localStorage.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+:root{
+    --submit-background: rgb(17, 0, 255);
+    --valid-background: rgb(161, 248, 161);
+    --invalid-background: rgb(197, 197, 197);
+}
+
+main{
+    font-family:Geneva, Verdana, sans-serif;
+    margin-bottom:2%;
+}
+
+label {
+    display: block;
+    padding-top: .5rem;
+    width: 100%;
+    margin: 0 0 5%;
+}
+
+input {
+    display: block;
+    padding: .5rem;
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+
+#rating {
+    width: 200px;
+    padding-bottom: 0px;
+}
+
+#rangevalues {
+    display: flex;
+    margin: 0 0 0 16px;
+    width: 200px;
+}
+
+#rangevalues option {
+    flex: 1;
+}
+
+#submit{
+    background-color: var(--submit-background);
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 5% 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+input:valid{
+    background-color: var(--valid-background);
+}
+
+input:invalid{
+    background-color: var(--invalid-background);
+}
+
+#message{
+    color: red;
+    padding: .5rem;
+}
+fieldset{
+    width: 100%;
+    margin: 0 0 2rem 2%;
+    background-color: white;
+    border-radius: 10px;
+}
+.top {
+    color: blue;
+    margin-bottom: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
