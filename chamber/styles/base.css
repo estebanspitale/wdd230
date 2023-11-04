@@ -222,3 +222,77 @@ footer p {
   text-align: center;
   margin: 0;
 }
+
+/* ---Join--- */
+
+.join{
+  display: grid;    
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.join > div{
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px black solid;
+  border-radius: 10px;  
+  width: 85%;
+  min-width: 400px;
+}
+
+label.top{
+  display:block;
+  padding-top: 1rem;
+  border-radius: 10px;
+}
+
+label.top input, label.top textarea{
+  display:block;
+  font-size: 1.2rem;
+  padding: .5rem;
+  width: 20rem;
+  max-width: 20rem;
+  background-color: rgb(241, 241, 241);
+}
+
+label.ml{
+  display: block;
+  margin-right: .2rem;
+  font-size: 1.3rem;  
+  padding-top: .5rem;
+  font-family: Tahoma, sans-serif;
+}
+
+label.ml input{
+  margin-right: 1rem;
+}
+
+.submit{
+  color: white;
+  margin: 1rem 0 0 0;
+  padding: .5rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background: linear-gradient( rgb(95, 87, 255) 0%, rgba(9,90,121,1) 53%);
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+.join-confirm{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+#thankyou h1{
+  text-align: center;
+  margin-block-start: 2%;
+  margin-block-end: 2%;
+  padding: 1rem 0;
+}

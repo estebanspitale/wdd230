@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Villa Carlos Paz</title>
+    <meta name="author" content="Esteban Adrian Spitale">
+    <meta name="description" content="Home Page: Villa Carlos Paz Chamber of Commerce and Tourism">
+    <link rel="icon" href="images/favicon.webp">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <meta property="og:title" content="Villa Carlos Paz Chamber of Commerce and Tourism">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.voydeviaje.com.ar/resizer/7YbXJ5i53k5btvE9fL1I56n2ii4=/1200x630/smart/filters:quality(75):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/2T4J2TVPBNB5TEZRHCZCXKTGE4.jpg" >
+    <meta property="og:url" content="https://estebanspitale.github.io/wdd230/chamber/index.html" >
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/favicon.webp" alt="Chamber Logo">
+        <h1>Villa Carlos Paz Chamber of Commerce and Tourism</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776;Menu</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <div id="mode"> 
+            🕶️
+        </div>
+    </header>
+    <main>
+        <section class="join">
+            <div>
+                <form method="get" action="thankyou.html">
+                    <label class="top">First Name*<input type="text" name="fname" id="fname" required></label>
+                    <label class="top">Last Name*<input type="text" name="lname" id="lname" required></label>
+                    <label class="top">Position<input type="text" name="position" id="position" pattern="[A-Za-z -]{7,}"></label>
+                    <label class="top">Email*<input type="email" name="email" id="email" required placeholder="sample@gmail.com"></label>
+                    <label class="top">Cell Phone*<input type="tel" name="telephone" id="telephone" required></label>
+                    <label class="top">Organization Name*<input type="text" name="orgname" id="orgname" required></label>
+                    <h2>Membership Level</h2>
+                    <label class="ml"><input type="radio" name="level" value="nonprofit">Non-Profit</label>
+                    <label class="ml"><input type="radio" name="level" value="bronze">Bronze</label>
+                    <label class="ml"><input type="radio" name="level" value="silver">Silver</label>
+                    <label class="ml"><input type="radio" name="level" value="gold">Gold</label>
+                    <label class="ml">Organization Description<textarea name="description" maxlength="500" cols="40" rows="5"></textarea></label>
+                    <label><input type="hidden" name="timestamp" id="timestamp" value=""></label>
+                    <input class="submit" type="submit" value="Join">
+                </form>
+            </div>
+            <div>
+                <h2>Membership Levels Benefits</h2>
+                <h3>NP Membership</h3>
+                <ul>
+                    <li>For non-profit organizations. There is no fee.</li>
+                </ul>
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li>2x1 in municipal events</li>
+                    <li>20% discount on training</li>
+                    <li>5% discount on advertising</li>
+                    <li>Price: $20/month</li>
+                </ul>
+
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li>2x1 in municipal events</li>
+                    <li>20% discount on special events (shows)</li>
+                    <li>40% discount on training</li>
+                    <li>15% discount on advertising</li>
+                    <li>Price: $80/month</li>
+                </ul>
+
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li>Free entry to municipal events</li>
+                    <li>50% discount on special events (shows)</li>
+                    <li>50% discount on training</li>
+                    <li>60% discount on advertising</li>
+                    <li>20% discount in partner stores</li>
+                    <li>Fee of $180/month</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Location: Virgilo y Constantinopla, Carlos Paz</p>
+        <p>&copy;<span id="currentyear"></span>| Esteban Spitale | Cordoba |</p>
+        <p> Project WDD230  </p>
+        <div> | Last Updated:<span id="lastmodified"></span></div>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+</html>
