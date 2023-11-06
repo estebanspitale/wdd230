@@ -1,0 +1,28 @@
+{
+    "familyName" : "Sanchez",
+    "dateMoved" : "July 26, 2023",
+    "numberPeople" : 4,
+    "bishopVisited" : true,
+    "members" : [
+        {
+            "name" : "Hugo",
+            "gender" : "male",
+            "birthdate" : "january 8, 1975"
+        },
+        {
+            "name" : "Rosa",
+            "gender" : "female",
+            "birthdate" : "march 18, 1978"
+        },
+        {
+            "name" : "Pedro",
+            "gender" : "male",
+            "birthdate" : "december 20, 2000"
+        },
+        {
+            "name" : "Alexander",
+            "gender" : "male",
+            "birthdate" : "january 8, 2002"
+        } 
+    ]
+}
