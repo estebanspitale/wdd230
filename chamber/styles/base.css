@@ -296,3 +296,121 @@ form label.top input:required:valid {
   margin-block-end: 2%;
   padding: 1rem 0;
 }
+
+/* ------ DIRECTORY - MAIN ------ */
+.directory {
+  display: grid;
+  grid-template-columns: .2rem 1fr .2rem;
+  gap: 2rem .2rem;
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 350px;
+}
+
+.view {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view button {
+  margin: 1rem;
+  padding: .5rem;
+  border: #eaf1f9;
+  border-radius: .4rem;
+  color: #eaf1f9;
+  background-color: #023368;
+}
+
+.directory h1 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 1rem 0 0 0;
+  text-align: center;
+  color: #023368;
+}
+
+article {
+  padding: 1.5rem;
+  border-radius: .4rem;
+  background-color: #014397;
+}
+
+.directory-grid {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1.5rem;
+  border: solid .2rem  #014397;
+  border-radius: .4rem;
+  background-color: #FFFFFF;
+  transition: .2s;
+}
+
+.d-image {
+  margin: .5rem auto;
+  border-radius: .4rem;
+  max-height: 120px;
+  max-width: 250px;
+  transition: .2s;
+}
+
+.member-card:nth-child(4) .d-image{
+  padding: .2rem 0;
+  background-color: #E97601;
+}
+
+.d-address {
+  margin: 1rem;
+  text-align: center;
+  color: #555;
+  transition: .2s;
+}
+
+.d-phone {
+  margin-top: .5rem;
+  color: #555;
+  transition: .2s;
+}
+
+.d-phone:hover {
+  color: #014397;
+  font-weight: bold;
+  text-decoration-color: #f6ae2d;
+}
+
+.d-websiteURL {
+  margin-top: .5rem;
+  color: #555;
+  transition: .2s;
+}
+
+.d-websiteURL:hover {
+  color: #014397;
+  font-weight: bold;
+  text-decoration-color: #f6ae2d;
+}
+
+@media screen and (min-width: 900px) {
+/* Page 3 DIRECTORY */
+    
+.directory {
+  max-width: 1200px;
+  min-width: 800px;
+}
+
+/* LIST VIEW */
+.directory-list .d-name {
+  min-width: 250px;
+  width: auto;
+}
+}
