@@ -297,7 +297,7 @@ form label.top input:required:valid {
   padding: 1rem 0;
 }
 
-/* ------ DIRECTORY - MAIN ------ */
+/* ------ DIRECTORY ------ */
 .directory {
   display: grid;
   grid-template-columns: .2rem 1fr .2rem;

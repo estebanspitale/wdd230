@@ -9,11 +9,6 @@ gridbutton.addEventListener("click", () => {
 	display.classList.remove("directory-list");
 });
 
-listbutton.addEventListener("click", () => {
-	display.classList.add("directory-list");
-	display.classList.remove("directory-grid");
-});
-
 listbutton.addEventListener("click", showList);
 
 function showList() {
