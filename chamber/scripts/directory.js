@@ -1,22 +1,21 @@
 // Grid and List
 
-const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
+const gridbutton = document.querySelector("#grid");
 const display = document.querySelector("article");
+
+
+listbutton.addEventListener("click", () => {
+	display.classList.add("directory-list");
+	display.classList.remove("directory-grid");
+});
 
 gridbutton.addEventListener("click", () => {
 	display.classList.add("directory-grid");
 	display.classList.remove("directory-list");
 });
 
-listbutton.addEventListener("click", showList);
-
-function showList() {
-	display.classList.add("directory-list");
-	display.classList.remove("directory-grid");
-}
-
-// 
+// Chamber Directory
 
 const getMembersURL = "https://estebanspitale.github.io/wdd230/chamber/data/members.json";
 const directoryContainer = document.querySelector('.directory-grid');
@@ -31,6 +30,7 @@ async function getMembers() {
 const displayMembers = (companies) => {
     companies.forEach((company) => {
         let card = document.createElement('section');
+        let name = document.createElement('h2');
         let address = document.createElement('p');
         let phone = document.createElement('a');
         let webURL = document.createElement('a');
@@ -39,6 +39,9 @@ const displayMembers = (companies) => {
         
         card.setAttribute('class', 'member-card');
 
+        name.setAttribute('class', 'd-name');
+        name.textContent = company.name;
+        
         address.setAttribute('class', 'd-address');
         address.textContent = company.address;
 
@@ -60,7 +63,7 @@ const displayMembers = (companies) => {
         membershipL.textContent = company.membershiplevel;
 
 
-
+        card.appendChild(name);
         card.appendChild(image);
         card.appendChild(address);
         card.appendChild(phone);
