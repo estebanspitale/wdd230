@@ -74,5 +74,10 @@
   footer p {
     padding-top: 0;
   }
-  
+  .forecasting p{
+    font-size: 100%;
+  }
+  figure{
+    font-size: 100%;
+  }
 }
