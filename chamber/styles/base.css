@@ -390,6 +390,7 @@ article {
 }
 
 /*Weather*/
+
 .weatherjs{
   display: grid;
   grid-template-columns: 33% 72%;
