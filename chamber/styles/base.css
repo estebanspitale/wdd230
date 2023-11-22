@@ -1,16 +1,24 @@
+:root{
+  --font-family: "Verdana", serif;
+  --text-align: center;
+  --background-image: linear-gradient(0deg, #04003a 0%, #4638ff 100%);
+  --background-color-ad: #00bfff;
+}
+
+
 body {
   margin: 0;
 }
 header,
 footer {
   background-color: #1359a4;
-  font-family: "Verdana", serif;
+  font-family: var(--font-family);
   color: whitesmoke;
-  background-image: linear-gradient(0deg, #04003a 0%, #4638ff 100%);
+  background-image: var(--background-image);
 }
 header {
   border-bottom: 1px solid black;
-  text-align: center;
+  text-align: var(--text-align);
 }
 
 header li:first-child {
@@ -32,7 +40,7 @@ header nav a:hover {
 }
 header ul {
   padding: 0;
-  text-align: center;
+  text-align: var(--text-align);
   margin: 0;
   margin-top: 20px;
 }
@@ -61,7 +69,7 @@ footer a {
 	cursor: pointer;
 }
 main {
-  font-family: "Verdana", sans-serif;
+  font-family: var(--font-family);
   background-color: #c2eeff;
 }
 
@@ -84,7 +92,7 @@ main {
 	opacity: 0.75;
 }
 .herolabel p {
-  text-align: center;
+  text-align: var(--text-align);
 	margin: 0;
 	font-size: 100%;
 	font-family:"Great Vibes", serif;
@@ -93,12 +101,12 @@ main {
   margin: 2%;
   display: grid;
   grid-template-columns:  1fr;
-  text-align: center;
+  text-align: var(--text-align);
   grid-gap: 1%;
 }
 .ad1 {
   padding: 2%;
-  background-color: #00bfff;
+  background-color: var(--background-color-ad);
   background-image: linear-gradient(0deg,#5991ff 0%, #5f54ff 100%);
 }
 .ad1 img {
@@ -106,7 +114,7 @@ main {
 }
 .ad2 {
   padding: 2%;
-  background-color: #00bfff;
+  background-color: var(--background-color-ad);
   background-image: linear-gradient(0deg,#5991ff 0%, #5f54ff 100%);
 }
 .ad2 img {
@@ -116,7 +124,7 @@ main {
   display: block;
   padding: 2%;
   font-weight:bold;
-  background-color: #00bfff;
+  background-color: var(--background-color-ad);
   margin-bottom: 3%;
   background-image: linear-gradient(0deg, #5f54ff 0%, #5991ff 100%);
 }
@@ -147,7 +155,7 @@ main {
 
 .currentEvents h3,
 .weather h3 {
-  text-align: center;
+  text-align: var(--text-align);
   color: #000000;
 }
 .currentEvents ul li {
@@ -158,11 +166,11 @@ main {
 }
 .weather .information {
   grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
+  text-align: var(--text-align);
   font-size: 90%;
 }
 .information button {
-  text-align: center;
+  text-align: var(--text-align);
   margin-left: 5%;
   margin-right: 5%;
   font-size: 90%;
@@ -173,10 +181,10 @@ main {
 }
 .information p{
   padding: 2%;
-  text-align: center;
+  text-align: var(--text-align);
 }
 .CTA {
-  text-align: center;
+  text-align: var(--text-align);
   margin: 2%;
   color: #000000;
   font-weight:bold;
@@ -219,7 +227,7 @@ footer {
   font-size: 20px;
 }
 footer p {
-  text-align: center;
+  text-align: var(--text-align);
   margin: 0;
 }
 
@@ -287,11 +295,11 @@ form label.top input:required:valid {
 .join-confirm{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  text-align: center;
+  text-align: var(--text-align);
 }
 
 #thankyou h1{
-  text-align: center;
+  text-align: var(--text-align);
   margin-block-start: 2%;
   margin-block-end: 2%;
   padding: 1rem 0;
@@ -323,7 +331,7 @@ form label.top input:required:valid {
 
 .directory h1 {
   padding: 1rem 0 0 0;
-  text-align: center;
+  text-align: var(--text-align);
   color: #023368;
 }
 
@@ -357,7 +365,7 @@ article {
   max-width: 250px;
 }
 .d-name {
-  text-align: center;
+  text-align: var(--text-align);
   color: #04003a;
 }
 
@@ -367,7 +375,7 @@ article {
 
 .d-address {
   margin: 1rem;
-  text-align: center;
+  text-align: var(--text-align);
   color: #555;
   transition: .2s;
 }
@@ -397,7 +405,7 @@ article {
 }
 
 #weatherjs{
-  text-align: center;
+  text-align: var(--text-align);
   width: 80%;
 }
 
@@ -407,7 +415,7 @@ figure{
   margin-left: 30%;
   margin-right: 20%;
   border-radius: 30px;
-  text-align: center;
+  text-align: var(--text-align);
   font-weight: bold;
   font-size: 70%;
 }
@@ -423,15 +431,15 @@ figure{
 }
 
 .forecast-three-days h3{
-  font-family: "Verdana", sans-serif;;
+  font-family: var(--font-family);
   letter-spacing: 1px;
-  text-align: center;
+  text-align: var(--text-align);
 }
 
 .forecast-three-days p{
-  font-family: "Verdana", sans-serif;;
+  font-family: var(--font-family);
   font-weight: bold;
-  text-align: center;
+  text-align: var(--text-align);
 }
 
 .forecast-three-days .forecast{
@@ -465,7 +473,7 @@ figure{
   display: none;
   background-color: rgba(4, 76, 232, 0.8);
   color: white;
-  text-align: center;
+  text-align: var(--text-align);
   padding: 10px;
   width: 100%;
 }
@@ -476,7 +484,7 @@ figure{
 }
 
 .close-btn {
-  text-align: center;
+  text-align: var(--text-align);
   font-size: 20px;
   cursor: pointer;
 }
